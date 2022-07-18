@@ -3,23 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package p1;
-
-import p2.Matricula;
+package p3;
 
 /**
  *
  * @author reroes
  */
-public class MatriculaCampamento extends Matricula {
+public class DominioUTPL extends Correo {
 
     @Override
-    public void establecerMatricula() {
-        matricula = (100.2 + 30.2 + 90.2);
+    public void establecerDominio(String g) {
+        dominio = g;
     }
-
     @Override
-    public void establecerTipo() {
-        tipo = "Matricula capmamento";
+    public String obtenerDominio() {
+        return dominio;
     }
 }
